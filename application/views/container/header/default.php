@@ -133,19 +133,19 @@
 			</script>
 			<?PHP endif ?>
 
-			<div class="dropdown animated fadeInDown animation-delay-15">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>
-				<div class="dropdown-menu dropdown-menu-right dropdown-search-box animated fadeInUp">
-					<form role="form">
-						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search...">
-							<span class="input-group-btn">
-								<button class="btn btn-ar btn-primary" type="button">Go!</button>
-							</span>
-						</div><!-- /input-group -->
-					</form>
-				</div>
-			</div> <!-- dropdown -->
+<!--			<div class="dropdown animated fadeInDown animation-delay-15">-->
+<!--				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i></a>-->
+<!--				<div class="dropdown-menu dropdown-menu-right dropdown-search-box animated fadeInUp">-->
+<!--					<form role="form">-->
+<!--						<div class="input-group">-->
+<!--							<input type="text" class="form-control" placeholder="Search...">-->
+<!--							<span class="input-group-btn">-->
+<!--								<button class="btn btn-ar btn-primary" type="button">Go!</button>-->
+<!--							</span>-->
+<!--						</div><!-- /input-group -->
+<!--					</form>-->
+<!--				</div>-->
+<!--			</div> <!-- dropdown -->
 		</nav>
 	</div> <!-- container -->
 </header> <!-- header-full -->

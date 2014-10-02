@@ -22,7 +22,7 @@ class Home extends CI_Controller
 		{
 			$game->category_name = $this->m_category->select_by_id( 'name', $game->id_category )[0]->name;
 			$data['game'] = $game;
-			$this->load->view( 'game', $data );
+			$this->load->view( 'game_details', $data );
 		}
 
 		$this->load->view( 'container/sidebar/default' );
