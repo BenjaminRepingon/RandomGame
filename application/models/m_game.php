@@ -5,12 +5,19 @@ class m_Game extends CI_Model
 	/*
 	 * ADD
 	 */
-	public function add( $title, $content, $id_category )
+	public function add( $title, $link_name, $author, $iframe, $description, $instructions, $id_category, $img )
 	{
 		$data = array(
 			'title' => $title,
-			'content' => $content,
-			'id_category' => $id_category
+			'link_name' => $link_name,
+			'author' => $author,
+			'iframe' => $iframe,
+			'description' => $description,
+			'instructions' => $instructions,
+			'id_category' => $id_category,
+			'img' => $img,
+			'rating' => 0,
+			'plays' => 0
 		);
 		$this->db->insert( 'game', $data );
 	}
@@ -54,13 +61,24 @@ class m_Game extends CI_Model
 	/*
 	 * SELECT
 	 */
-	public function select( $select, $where = NULL )
+	public function select( $select, $where = NULL, $limit = NULL, $offset = NULL)
 	{
 		$this->db->select( $select );
-		$this->db->from( 'game' );
+		$this->db->join('category', 'category.id = game.id_category');
 		if ( $where != NULL )
 			$this->db->where( $where );
-		$query = $this->db->get();
+		$query = $this->db->get('game', $limit, $offset);
+		return $query->result();
+	}
+
+	public function select_top( $select, $top, $where = NULL, $limit = NULL, $offset = NULL)
+	{
+		$this->db->select( $select );
+		$this->db->order_by($top, 'ASC');
+		$this->db->join('category', 'category.id = game.id_category');
+		if ( $where != NULL )
+			$this->db->where( $where );
+		$query = $this->db->get('game', $limit, $offset);
 		return $query->result();
 	}
 
@@ -69,9 +87,9 @@ class m_Game extends CI_Model
 		return $this->select( $select, array( 'id' => $id ) );
 	}
 
-	public function select_by_title( $select, $title )
+	public function select_by_link_name( $select, $title )
 	{
-		return $this->select( $select, array( 'title' => $title ) );
+		return $this->select( $select, array( 'link_name' => $title ) );
 	}
 
 	public function select_by_date_between( $select, $timestamp_min, $timestamp_max )

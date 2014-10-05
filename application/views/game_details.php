@@ -26,7 +26,7 @@
 	</header>
 	<div class="article-content">
 		<p>
-			<?PHP echo $game->content; ?>
+<!--			--><?PHP //echo $game->content; ?>
 		</p>
 	</div>
 	<footer>

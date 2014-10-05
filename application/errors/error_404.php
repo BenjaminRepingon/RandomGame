@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>404 Page Not Found</title>
-<style type="text/css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-::selection{ background-color: #E13300; color: white; }
-::moz-selection{ background-color: #E13300; color: white; }
-::webkit-selection{ background-color: #E13300; color: white; }
+	<title>Random Game</title>
 
-body {
-	background-color: #fff;
-	margin: 40px;
-	font: 13px/20px normal Helvetica, Arial, sans-serif;
-	color: #4F5155;
-}
+	<link rel="shortcut icon" href="img/favicon.png">
 
-a {
-	color: #003399;
-	background-color: transparent;
-	font-weight: normal;
-}
+	<meta name="description" content="">
 
-h1 {
-	color: #444;
-	background-color: transparent;
-	border-bottom: 1px solid #D0D0D0;
-	font-size: 19px;
-	font-weight: normal;
-	margin: 0 0 14px 0;
-	padding: 14px 15px 10px 15px;
-}
+	<!-- CSS -->
+	<link href="http://localhost/GameCorp/assets/css/preload.css" rel="stylesheet" media="screen">
+	<link href="http://localhost/GameCorp/assets/css/bootstrap.css" rel="stylesheet" media="screen">
+	<link href="http://localhost/GameCorp/assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="http://localhost/GameCorp/assets/css/animate.min.css" rel="stylesheet" media="screen">
+	<link href="http://localhost/GameCorp/assets/css/slidebars.css" rel="stylesheet" media="screen">
+	<link href="http://localhost/GameCorp/assets/css/lightbox.css" rel="stylesheet" media="screen">
+	<link href="http://localhost/GameCorp/assets/css/jquery.bxslider.css" rel="stylesheet">
+	<link href="http://localhost/GameCorp/assets/css/syntaxhighlighter/shCore.css" rel="stylesheet" media="screen">
 
-code {
-	font-family: Consolas, Monaco, Courier New, Courier, monospace;
-	font-size: 12px;
-	background-color: #f9f9f9;
-	border: 1px solid #D0D0D0;
-	color: #002166;
-	display: block;
-	margin: 14px 0 14px 0;
-	padding: 12px 10px 12px 10px;
-}
+	<link href="http://localhost/GameCorp/assets/css/style-blue.css" rel="stylesheet" media="screen" title="default">
+	<link href="http://localhost/GameCorp/assets/css/width-full.css" rel="stylesheet" media="screen" title="default">
 
-#container {
-	margin: 10px;
-	border: 1px solid #D0D0D0;
-	-webkit-box-shadow: 0 0 8px #D0D0D0;
-}
-
-p {
-	margin: 12px 15px 12px 15px;
-}
-</style>
+	<link href="http://localhost/GameCorp/assets/css/buttons.css" rel="stylesheet" media="screen">
 </head>
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">&nbsp;</div>
+</div>
+
 <body>
-	<div id="container">
-		<h1><?php echo $heading; ?></h1>
-		<?php echo $message; ?>
+
+
+<div class="paper-back">
+	<div class="absolute-center">
+		<div class="text-center">
+			<div class="title-logo animated fadeInDown animation-delay-5">Random<span>Game</span></div>
+			<div class="transparent-div animated fadeInUp animation-delay-8">
+				<h1>Error 404</h1>
+				<h2>Page Not Found</h2>
+				<p>We have not found what you are looking for. <br> We have put our robots to search.</p>
+				<a href="http://localhost/GameCorp/" class="btn btn-ar btn-primary btn-lg">Go Home</a>
+			</div>
+		</div>
 	</div>
+</div>
+
+<!-- Scripts -->
+<script src="http://localhost/GameCorp/assets/js/jquery.min.js"></script>
+<script src="http://localhost/GameCorp/assets/js/jquery.cookie.js"></script>
+<script src="http://localhost/GameCorp/assets/js/bootstrap.min.js"></script>
+<script src="http://localhost/GameCorp/assets/js/wow.min.js"></script>
+<script src="http://localhost/GameCorp/assets/js/slidebars.js"></script>
+<script src="http://localhost/GameCorp/assets/js/jquery.bxslider.min.js"></script>
+<script src="http://localhost/GameCorp/assets/js/holder.js"></script>
+<script src="http://localhost/GameCorp/assets/js/buttons.js"></script>
+<script src="http://localhost/GameCorp/assets/js/styleswitcher.js"></script>
+<script src="http://localhost/GameCorp/assets/js/jquery.mixitup.min.js"></script>
+<script src="http://localhost/GameCorp/assets/js/circles.min.js"></script>
+
+<!-- Syntaxhighlighter -->
+<script src="http://localhost/GameCorp/assets/js/syntaxhighlighter/shCore.js"></script>
+<script src="http://localhost/GameCorp/assets/js/syntaxhighlighter/shBrushXml.js"></script>
+<script src="http://localhost/GameCorp/assets/js/syntaxhighlighter/shBrushJScript.js"></script>
+
+<script src="http://localhost/GameCorp/assets/js/app.js"></script>
+
 </body>
+
 </html>

@@ -21,7 +21,7 @@ class m_User extends CI_Model
 		if ( $q->num_rows() > 0 )
 		{
 			$res = $q->result();
-			$this->session->set_userdata( array( 'id' => $res[0]->id, 'name' => $res[0]->name ) );
+			$this->session->set_userdata( array( 'id' => $res[0]->id, 'name' => $res[0]->name, 'admin' => $res[0]->admin ) );
 			return true;
 		}
 		return false;

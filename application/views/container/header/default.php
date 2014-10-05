@@ -1,8 +1,8 @@
 <header id="header-full-top" class="hidden-xs header-full-dark">
 	<div class="container">
 		<div class="header-full-title">
-			<h1 class="animated fadeInRight"><a href="#">Game <span>Corp</span></a></h1>
-			<p class="animated fadeInRight">Clean and elegant theme</p>
+			<h1 class="animated fadeInRight"><a href="<?PHP echo base_url()?>">Random Game<span> (Alpha)</span></a></h1>
+			<p class="animated fadeInRight">Free online games</p>
 		</div>
 		<nav class="top-nav">
 			<ul class="top-nav-social hidden-sm">
@@ -52,10 +52,11 @@
 						var password=$("#password").val();
 						$.ajax({
 							type: "POST",
-							url: "ajax/login",
+							url: "<?PHP echo base_url() ?>ajax/login",
 							data: "name="+username+"&pwd="+password,
 							success: function(html)
 							{
+								console.log(html);
 								if (html == 1)
 									window.location.reload();
 								else
@@ -120,7 +121,7 @@
 					{
 						$.ajax({
 							type: "POST",
-							url: "ajax/logout",
+							url: "<?PHP echo base_url() ?>ajax/logout",
 							success: function(html)
 							{
 								if (html == 1)
@@ -149,5 +150,3 @@
 		</nav>
 	</div> <!-- container -->
 </header> <!-- header-full -->
-
-<div id="wrapper">
