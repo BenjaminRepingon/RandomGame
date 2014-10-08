@@ -109,8 +109,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('m_game', 'm_category');
-
+$autoload['model'] = array( 'm_category', 'm_game' );
 
 /* End of file autoload.php */
 /* Location: ./application/config/autoload.php */
