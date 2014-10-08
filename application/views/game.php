@@ -39,7 +39,7 @@
 					<li class="comment">
 						<div class="panel panel-default">
 							<div class="panel-body">
-								<img src="js/holder.js/100x100/sky/text:avatar" alt="" class="imageborder alignleft">
+								<img src="<?PHP base_url()?>assets/js/holder.js/100x100/sky/text:avatar" alt="" class="imageborder alignleft">
 								<p><?PHP echo $comment->content ?></p>
 							</div>
 							<div class="panel-footer">

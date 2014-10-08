@@ -29,7 +29,6 @@
 									<a href="<?PHP echo base_url()."category/".$elem->category ?>">
 										<h2 class="animated fadeInDownBig animation-delay-5  crousel-subtitle"><?PHP echo $elem->category ?></h2>
 									</a>
-<!--									<p class="animated bounceInLeft animation-delay-11">--><?PHP //echo $elem->description ?><!--</p>-->
 								</div>
 							</div>
 						</div>
@@ -75,10 +74,10 @@
 
 		<?PHP foreach( $games as $game ) : ?>
 		<div class="col-sm-4 mix category-<?PHP echo $game->category ?>" data-date="<?PHP echo $game->date ?>" data-rating="<?PHP echo $game->rating ?>" data-popularity="<?PHP echo $game->plays ?>">
-			<div class="ec-box">
+			<div class="ec-box" style="height: 250px; background-color: #F5F5F5">
 				<div class="ec-box-header"><a href="<?PHP echo base_url()."game/".$game->link_name ?>"><?PHP echo $game->title ?></a></div>
 				<a class="category-img" href="<?PHP echo base_url()."game/".$game->link_name ?>"><img src="<?PHP echo base_url()."uploads/img/small/".$game->img ?>" alt=""></a>
-				<div class="ec-box-footer">
+				<div class="ec-box-footer" style="margin-top: 0">
 					<a href="<?PHP echo base_url()."game/".$game->category ?>"><?PHP echo $game->category ?></a><br/>
 					<?PHP $i = 0; while($i++ < $game->rating) : ?>
 						<i class="fa fa-star"></i>

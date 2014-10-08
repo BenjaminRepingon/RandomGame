@@ -109,6 +109,9 @@
 					<h4>Profile</h4>
 
 					<h5><?PHP echo "Username: ".$this->session->userdata('name'); ?></h5>
+					<?PHP if ( $this->session->userdata('admin') == 1 ) : ?>
+					<a id="add_game" href="<?PHP echo base_url() ?>game/add" >Add game</a>
+					<?PHP endif ?>
 					<button id="logout" type="submit" class="btn btn-ar btn-primary pull-right">Logout</button>
 				</div>
 			</div> <!-- dropdown -->
