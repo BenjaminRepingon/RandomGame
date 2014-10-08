@@ -10,8 +10,6 @@ class Home extends CI_Controller
 
 	public function index()
 	{
-		$this->load->model( 'm_game' );
-		$this->load->model( 'm_category' );
 		$games = $this->m_game->select( 'game.*, (`category`.`name`) AS category' );
 		$top5 = $this->m_game->select_top( 'game.*, (`category`.`name`) AS category', 'plays', NULL, 5, 0 );
 		$categories = $this->m_category->select( '*' );

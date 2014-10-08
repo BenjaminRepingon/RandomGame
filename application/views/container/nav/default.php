@@ -16,20 +16,36 @@
 <!--		</div>-->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="dropdown">
+				<li>
 					<a href="<?PHP echo base_url() ?>" >Home</a>
-<!--					<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Home</a>-->
-<!--					<ul class="dropdown-menu dropdown-menu-left">-->
-<!--						<li><a href="index.html">Option 1: Default</a></li>-->
-<!--						<li><a href="home_services.html">Option 2: Services</a></li>-->
-<!--						<li><a href="home_full.html">Option 3: Full Intro</a></li>-->
-<!--						<li><a href="home_only_full.html">Option 4: Only Full Intro</a></li>-->
-<!--						<li><a href="home_news.html">Option 5: News</a></li>-->
-<!--						<li><a href="home_profile.html">Option 6: Professional Profile</a></li>-->
-<!--						<li role="presentation" class="dropdown-header">Header Options</li>-->
-<!--						<li><a href="configurator.html">Configurator<span class="label label-success pull-right">New</span></a></li>-->
-<!--					</ul>-->
 				</li>
+				<?php
+				$categories = $this->m_category->select( '*' );
+				$size = count($categories);
+				for ($i = 0; $i < 7; $i++)
+				{
+					?>
+					<li class="dropdown">
+						<a href="<?PHP echo base_url() ?>" class="has_children" ><?php echo $categories[$i]->name; ?></a>
+					</li>
+					<?php
+				}
+				?>
+				<li class="dropdown">
+						<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">More</a>
+						<ul class="dropdown-menu dropdown-menu-left">
+							<?php
+							while ($i < $size)
+							{
+								?>
+									<li><a href="index.html"><?php echo $categories[$i]->name; ?></a></li>
+								<?php
+								$i++;
+							}
+							?>
+						</ul>
+				</li>
+
 			</ul>
 		</div><!-- navbar-collapse -->
 
