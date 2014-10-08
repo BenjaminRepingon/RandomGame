@@ -39,7 +39,16 @@ CREATE TABLE IF NOT EXISTS `category` (
 INSERT INTO `category` (`id`, `name`) VALUES
 (1, 'Strategy'),
 (2, 'Arcade'),
-(3, 'Shooters');
+(3, 'Shooters'),
+(4, 'Racing'),
+(5, 'Sports'),
+(8, 'Action'),
+(9, 'Puzzle'),
+(10, 'Funny'),
+(11, 'Girl'),
+(12, 'Adventure'),
+(13, 'Multiplayer'),
+(14, 'Social');
 
 -- --------------------------------------------------------
 
