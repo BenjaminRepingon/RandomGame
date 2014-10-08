@@ -3196,6 +3196,12 @@ tbody.collapse.in {
 .open > .dropdown-menu {
   display: block;
 }
+
+.dropdown-menu-custom:hover > ul
+{
+  display: block;
+}
+
 .open > a {
   outline: 0;
 }

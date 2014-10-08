@@ -25,15 +25,21 @@
 				for ($i = 0; $i < 7; $i++)
 				{
 					?>
-					<li class="dropdown">
+					<li class="dropdown dropdown-menu-custom">
 						<a href="<?PHP echo base_url() ?>" class="has_children" ><?php echo $categories[$i]->name; ?></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Banzaie</a></li>
+							<li><a href="#">Banzaie</a></li>
+							<li><a href="#">Banzaie</a></li>
+							<li><a href="#">Banzaie</a></li>
+						</ul>
 					</li>
 					<?php
 				}
 				?>
-				<li class="dropdown">
+				<li class="dropdown dropdown-menu-custom">
 						<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">More</a>
-						<ul class="dropdown-menu dropdown-menu-left">
+						<ul class="dropdown-menu">
 							<?php
 							while ($i < $size)
 							{
