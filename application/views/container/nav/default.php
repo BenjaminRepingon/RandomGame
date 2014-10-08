@@ -38,7 +38,7 @@
 				}
 				?>
 				<li class="dropdown dropdown-menu-custom">
-						<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">More</a>
+						<a href="javascript:void(0);" >More</a>
 						<ul class="dropdown-menu">
 							<?php
 							while ($i < $size)
